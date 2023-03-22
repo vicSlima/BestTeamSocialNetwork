@@ -13,25 +13,12 @@ Critérios para remover:
 """
 
 def removendoVertices(grafo):
-	removido=False
+	removido = False
 	for vertice in grafo.nodes():
-
-		if vertice.degree()==1:
-
-			removerVertice=True
-			for hab in vertice['skills']:
-
-				if hab in T:
-
-					removerVertice=False
-					break
-
-				else:
-
-					continue
-			if removerVertice:
-				grafo.remove_node(vertice)
-				removido=True
+		#remove vertices de grau 1 e remove os relentados
+		if vertice.degree() in [0, 1] and not any(hab in T for hab in vertice['skills']):
+			grafo.remove_node(vertice)
+			removido = True
 	return removido
 
 limparGrafo=removendoVertices(G)
