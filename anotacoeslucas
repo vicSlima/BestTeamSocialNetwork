@@ -1,0 +1,4 @@
+implementei algumas habilidades na hora de instaciar a função add_edge como argumento para fins de teste.
+
+o networkx é importado apenas no arquivo graph, pois, ao copilar o código, ao instaciar o graph no main
+rodara sem nenhum problema. irá herdar todas as dependencias no main do graph. 
