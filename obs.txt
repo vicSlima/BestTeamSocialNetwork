@@ -1,0 +1,9 @@
+ARRUMAR ENTRADA
+1. Gerar grafo e atribuir habilidades dos vértices
+2. Listas habilidades
+
+1. Contar qtd de vértices tem para cada habilidade (antes do MST) (Obs. DFS ou BFS)
+2. Criar função parecida com removendoVertices que:
+2.1 se for grau 1, e tiver pelo menos dois vértices que tenham cada uma das habilidades ou não requerer as habilidades
+2.2 remover o vértice analisado
+2.3 atualizar a contagem, e repetir o processo.
