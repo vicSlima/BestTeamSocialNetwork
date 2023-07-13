@@ -26,6 +26,18 @@ while limparGrafo:
 	removendoVertices(G)
 
 """
+Contabilizando quantidade de habilidades no grafo
+"""
+
+qtdHabilidades=dict()
+
+for habilidade in (grafo.nodes())['skills']:
+	if habilidade in qtdHabilidades.keys():
+		qtdHabilidades[habilidade]+=1
+	else:
+		qtdHabilidades[habilidade]=1
+
+"""
 Obtendo árvore geradora mínima
 """
 
